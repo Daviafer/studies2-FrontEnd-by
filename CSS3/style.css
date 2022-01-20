@@ -1,0 +1,28 @@
+/* VÁRIOS ESTILOS em CSS */
+
+.css-inline h2{
+  background-color:chocolate;
+  color: aliceblue;
+}
+.css-inline p{
+  color:brown;
+  font-size: 23px;
+}
+.margin-padding-border p{
+  /* margin: 30px;  */
+  margin: 30px 15px;
+  /* margin: 30px 15px 30px 15px;  */
+  padding: 20px 9px 19px 3px;
+  background-color: blueviolet;
+
+  border:20px solid blue;
+  /* border-top-color: green ; */
+  border-bottom-color: lawngreen;
+  border-color:red brown chartreuse darkgoldenrod;
+}
+.modelos-caixa p{
+  margin: 20px;
+  padding: 10px;
+  border: 10px solid forestgreen;
+  background-color: darkgoldenrod;
+}
