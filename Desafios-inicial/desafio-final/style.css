@@ -1,0 +1,21 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+  color: #fff;
+}
+th, td{
+  padding: 10px;
+}
+td{
+  background-color: #424250;
+}
+.table-moda th{
+  background-color: #BB86FC;
+}
+.table-casa th{
+  background-color: #00C4B4;
+}
+.td-valor {
+  text-align: right;
+}
