@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Códigos</title>
+</head>
+<body>
+  <h1>Input Text</h1>
+  
+  <input type="text" name="nome" value="Nome tal" id="nome" placeholder="Digite o nome">
+  <input type="email" name="email" value="" id="email" placeholder="Digite seu email">
+  
+  <hr> <br>
+  <h1>Inputs Number, Password e Submit</h1>
+
+  <label for="numero">Número:</label>
+  <input id="numero" type="number" name="number" id="">
+
+  <label for="senha">Senha:</label>
+  <input id="senha" type="password" name="senha" id="senha">
+
+  <input type="submit" value="Salvar">
+
+  <hr><br>
+  <h1>Inputs Checkbox e Radio</h1>
+
+  <label for="c#">C#</label>
+  <input id="c#" type="checkbox" name="linguagens" checked><br>
+  <label for="js">JavaScript</label>
+  <input type="checkbox" name="linguagens" id="js">
+  <br>
+    <!-- um por vez -->
+  <label for="masculino">Masculino</label>
+  <input type="radio" name="masculino" id="masculino">
+  <label for="feminino">Feminino</label>
+  <input type="radio" name="feminino" id="feminino">
+  
+  <hr><br>
+  <h1>Select</h1>
+  <label for="filmes">Filmes:</label>
+  <select name="filmes" id="filmes"> <!-- multiple = pode selecionar vários -->
+    <option value="">Selecione o filme</option>
+    <option value="Senhor dos anéis">Senhor dos anéis</option>
+    <option value="Mad Max">Mad Max</option>
+    <option value="Matrix">Matrix</option>
+    <option value="Vingadores" >Vingadores</option> <!-- selected = já deixa selecionado -->
+  </select>
+
+  <hr><br>
+  <h1>Textarea</h1>
+
+  <textarea name="texto" id="texto" cols="30" rows="10">
+    <p>Aqui fica o texto</p>
+  </textarea>
+
+  <hr><br>
+  <h1>Button e input type button</h1>
+
+  <button>Clique aqui</button>
+  <input type="button" value="Clicar aqui" onclick="alert(Olá)">
+
+  <hr><br>
+  <h1>Formulário</h1>
+  <!-- parametros pela URL -->
+  <form method="GET" action="index.html" >
+    <input type="text" name="q" value="Nometal">
+    <input type="submit" value="Enviar">
+  </form>
+  <!-- parametros por "baixo dos panos" -->
+  <form method="POST" action="index.html">
+    <input type="text" name="q">
+    <input type="submit" value="Enviar">
+  </form>
+            <!-- ==========================================-->
+  <hr><br>
+  <h1>Formulário de login</h1>
+  <form method="GET" action="index.html" enctype="multipart/form-data">
+    <label for="nome">Nome:</label>
+
+    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+    <br>
+    <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email">
+    <br>
+    <input type="password" nome="senha" id="senha" placeholder="Nova Senha">
+    <br>
+    <label>Data de nascimento</label>
+    <select name="dia" id="dia">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <select name="mes" id="mes">
+      <option value="jan">Janeiro</option>
+      <option value="fev">Fevereiro</option>
+      <option value="mar">Março</option>
+      <option value="Abr">Abril</option>
+    </select>
+    <select name="ano" id="ano">
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+    </select>
+    <br>
+    <label>Gênero</label>
+    <label for="feminino">Feminino</label>
+    <input type="radio" name="genero" id="feminino" value="feminino">
+    
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="genero" id="masculino" value="masculino">
+    
+    <label for="personalizado">Personalizado</label>
+    <input type="radio" name="genero" id="personalizado" value="personalizado">
+    <br><br>
+      <!-- no form precisa adicionar o enctype="multipart/form/data" -->
+    <input type="file" name="arquivo" id="arquivo">
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <hr><br>
+  <h1>Tags Semânticas</h1>
+  <header>
+    <h1>Tags</h1>
+
+    <nav>
+      <ul>
+        <li href="/home">Home</li>
+        <li href="/sobre">Sobre</li>
+        <li href="/portifolio">Portifólio</li>
+        <li href="/contato">Contato</li>
+      </ul>
+    </nav>
+  </header>
+  <!-- tag main deve ser usada 1 vez, tag principal -->
+  <main> 
+    <section>
+      <h2>Estou no Section</h2>
+      <!-- caixa de imagem e legenda -->
+      <figure>
+        <img src="" alt="">
+        <figcaption> Essa é a legenda </figcaption>
+      </figure>
+      
+      <p>HTML intermediário</p>
+    </section>
+
+    <article>
+      <h2>C#</h2>
+      <p>
+        C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft.
+      </p>
+
+      <h2>JavaScript</h2>
+      <p>
+        JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
+      </p>
+    </article>
+
+    <aside>
+      <h2>Estou no aside - conteúdo adicional</h2>
+    </aside>
+
+  </main>
+
+  <footer>
+    <h2>Estou no Footer</h2>
+    <p>para contato, pode ter link e div</p>
+
+    <address href="url.com/nome">LinkedIn</address>
+  </footer>
+
+</body>
+</html>
