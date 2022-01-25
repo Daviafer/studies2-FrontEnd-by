@@ -1,0 +1,20 @@
+.container-cascata {
+  background-color: red;    
+}
+.container-cascata{
+  background-color: blue;
+}
+
+/* ESPECIFICIDADE */
+
+/* ID tem mais preferência */
+#id-especificidade {
+  background-color: darkorange;
+}
+.container-especificidade p{
+  background-color: brown;
+}
+/* mesmo sendo tag p, a espeficidade está na classe container-especificidade p */
+p{
+  background-color: darkblue;
+}

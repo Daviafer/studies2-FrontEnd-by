@@ -1,0 +1,48 @@
+p{
+  color: coral;
+  font-size: 23px;
+  font-weight: bold;
+}
+.bg{
+  background-color: cyan;
+  background-image: url(img/cat.png);
+}
+.bg-image{
+  width: 513px;
+  height: 340px;
+}
+/* ---------------------------
+REPEAT
+--------------------------- */
+.bg-repeat{
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  height: 340px;
+}
+/* ---------------------------
+SIZE COVER
+--------------------------- */
+.bg-size-cover{
+  background-size: cover;   /* cobrindo todo local*/
+  height: 340px;
+}
+/* ---------------------------
+FIXED
+--------------------------- */
+.bg-fixed{
+  /* background-attachment: scroll;  - comum*/
+  background-attachment: fixed;
+  height: 340px;
+}
+/* ---------------------------
+POSITION
+--------------------------- */
+.bg-position{
+  /* background-position: left; */
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 540px;
+
+  background: rgb(60, 117, 68) url('img/cat.png')
+              no-repeat right top;
+}

@@ -1,0 +1,17 @@
+*{
+  font-size: xx-large;
+}
+@font-face {
+  font-family: 'Estilo h1';
+  src:  url('Fonts-externa/WeAreDIMDAM.otf');
+}
+@font-face {
+  font-family: 'Estilo p';
+  src: url('Fonts-externa/Honey\ Florist\ -\ Personal\ Use.otf');
+}
+h1{
+  font-family: 'Estilo h1';
+}
+p{
+  font-family: 'Estilo p';
+}
