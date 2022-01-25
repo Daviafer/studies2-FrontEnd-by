@@ -24,7 +24,7 @@ SIZE COVER
 --------------------------- */
 .bg-size-cover{
   background-size: cover;   /* cobrindo todo local*/
-  height: 340px;
+  height: 540px;
 }
 /* ---------------------------
 FIXED
@@ -32,6 +32,7 @@ FIXED
 .bg-fixed{
   /* background-attachment: scroll;  - comum*/
   background-attachment: fixed;
+  background-repeat:no-repeat ;
   height: 340px;
 }
 /* ---------------------------
