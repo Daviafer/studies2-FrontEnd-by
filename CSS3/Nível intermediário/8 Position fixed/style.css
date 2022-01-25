@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+}
+body{
+  height: 1500px;
+  padding-top: 67px;
+}
+header{
+  font-size: 23px;
+  position: fixed;
+  background-color: deepskyblue;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+
+}

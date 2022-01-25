@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+  font-size: 23px;
+}
+ul{
+  margin-bottom: 50px;
+}
+/* -------------------------------
+Display block
+------------------------------- */
+.em-bloco li{
+  background: palegreen;
+  margin-bottom: 10px;
+}
+/* -------------------------------
+Display inline
+------------------------------- */
+.em-linha li{
+  display: inline;
+  background: palegreen;
+}
+/* -------------------------------
+Display em linha e bloco
+------------------------------- */
+.em-linha-e-bloco li{
+  display: inline-block;
+  background: palegreen;
+  width: 100px;
+  height: 100px;
+}
+/* -------------------------------
+Display none
+------------------------------- */
+.esconder{
+  display: none;
+  background: palegreen;
+  width: 100px;
+  height: 100px;
+}
