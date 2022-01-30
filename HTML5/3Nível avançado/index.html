@@ -17,11 +17,15 @@
     <img src="img/celular.jpg" alt="Celular">
   </picture>
   <hr>
+
+
   <h1>Favicon</h1>
     <p>
       Utilizado no head do documento, adicionando ou alterar o ícone
     </p>
-  
+  <hr>
+
+
   <h1>Caracteres e emojis</h1>
     <p>Simbolo copyright: </p> &copy;
     <p>Espaço</p> &nbsp;
@@ -29,6 +33,46 @@
     <br>
     <p>Emoji</p> &#128151;
     <p>Emoji</p> &#128525;
+  <hr>
+
+
+  <h1>Adicionando áudio</h1>
+  <!--autoplay não funciona no Chrome;
+      preload (carregamento)
+      Safari não aceita .ogg 
+  -->
+    <audio src="#" controls autoplay preload="auto"></audio>
+    <h3>Em outros formatos</h3>
+    <audio controls>
+      <source src="audio.ogg" type="audio/ogg">
+      <source src="audio.mp3" type="audio/mpeg">
+      <source src="audio.wav" type="audio/wav">
+    </audio>
+    <hr>
+    
+
+    <h1>Adicionando vídeo</h1>
+        <!-- aconselhavel não áudios ou vídeos no projeto hospedado -->
+    <!--controls muted (para iniciar altomaticamente no Chrome) 
+        poster (deixando uma imagem inicial)
+    -->
+    <video src="#" width="200" controls muted loop poster="img/imagem.jpg"></video>
+    <p>Outra forma para vários navegadores</p>
+    <!-- ainda possui o: ogv e ogm -->
+    <video controls width="300">
+      <source src="video.mp4" type="video.mp4">
+      <source src="video.ogg" type="video.ogg">
+      <source src="video.webm" type="video.webm">
+      
+      <!-- caso o navegador não tenha suporte -->
+      <p>Esse navegador não tem suporte a tag vídeo</p>
+    </video>
+    <hr>
+
+
+    <h1>Iframes</h1>
+    <iframe src="conteudo.html" width="100" height="100" frameborder="0"></iframe>
+
 
 </body>
 </html>
