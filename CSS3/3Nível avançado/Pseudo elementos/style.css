@@ -1,0 +1,36 @@
+/* seletor::pseudo-elemento{
+  propriedade: valor;
+} */
+
+p::first-letter{
+  color: brown;
+}
+/* 
+#paragrado::first-letter{
+  color: brown;
+} */
+.first-letter::first-letter{
+  color: blueviolet;
+}
+/* ----- first-line = primeira linha */
+.first-line::first-line{
+  color: brown;
+}
+li::marker{
+  column-rule: red;
+    font-size: 20px;
+}
+/* ----- Colocar em vários lugares simultaneamente */
+h2::before{
+  /* content: url(image.jpg); */
+
+  content: "Testo simultaneo ";
+}
+/* before = antes | after = depois */
+h2::before{
+  content: "";
+  background: url(logo.jpg) center center no-repeat;
+  display: inline-block;
+  width: 85px;
+  height: 90px;
+}

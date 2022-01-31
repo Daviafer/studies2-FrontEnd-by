@@ -1,0 +1,32 @@
+/* seletor:pseudo-classe{
+  propriedade:valor;
+} */
+
+p:first-child{
+  color: blue;
+}
+p:last-child{
+  color: orange;
+}
+/* ----- NÃO TEM CLASSE NAS TAGS */
+p:not(.padrao){
+  color: blueviolet;
+}
+/* ----- old = somente elementos ímpares | even = páres */
+p:nth-child(odd){
+  color: red;
+}
+/* ----- pulando elementos | 2n = de dois | 2 = somente 2 | 
+ */
+ li:nth-child(2n){
+  color: red;
+}
+/* ----- de determinado elemento pra outro elemento antes do final */
+/* li:nth-child(n+2):nth-child(-n+5){
+  color: aqua;
+} */
+
+/* ----- usando os p que não tem nenhum irmão */
+p:only-child{
+  color: greenyellow;
+}

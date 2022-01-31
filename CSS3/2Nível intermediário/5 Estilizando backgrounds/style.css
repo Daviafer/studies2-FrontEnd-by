@@ -1,3 +1,8 @@
+/* body{
+  background-image: url("img/cat.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
 p{
   color: coral;
   font-size: 23px;
@@ -24,7 +29,7 @@ SIZE COVER
 --------------------------- */
 .bg-size-cover{
   background-size: cover;   /* cobrindo todo local*/
-  height: 540px;
+  height: 500px;
 }
 /* ---------------------------
 FIXED
