@@ -1,0 +1,12 @@
+.flex{
+  height: 600px;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;    /* alinhando verticalmente*/
+}
+.flex h2{
+  font-size: 60px;
+  color: aliceblue;
+}

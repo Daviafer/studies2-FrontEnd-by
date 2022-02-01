@@ -1,0 +1,17 @@
+.container > div{
+  border: 1px solid black;
+  background-color: blueviolet;
+  color: wheat;
+  font-size: 20px;
+}
+.container{
+  display: grid;
+/* duas colunas */
+  grid-template-columns: auto auto;
+/* aumenta tamanho da linha */
+  grid-template-rows: 150px 100px;
+
+  /*todos acompanham */
+/*  display: inline-grid;*/   
+
+}

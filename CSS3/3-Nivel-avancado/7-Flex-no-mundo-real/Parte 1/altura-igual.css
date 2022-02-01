@@ -1,0 +1,24 @@
+.flex{
+  display: flex;
+  width: 960px;
+  max-width: 100%;
+
+  flex-wrap: wrap;  /*para quebrar os conteúdos*/
+}
+.flex img{
+  max-width: 100%;
+}
+
+.coluna{
+  background-color: burlywood;
+  display: flex;
+/*  flex: 1;    /*Deixando ajustado as imagens etc pelo diplay flex, na classe flex*/
+  flex-direction: column;   /* deixando em coluna*/
+  margin: 1em;
+  /* width: 250px; */
+  flex: 0 1 250px;
+}
+.botao{
+  align-self: flex-start;
+  margin-top: auto;
+}

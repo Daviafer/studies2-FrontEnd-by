@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

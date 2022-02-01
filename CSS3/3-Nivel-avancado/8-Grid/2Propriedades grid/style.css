@@ -1,0 +1,36 @@
+.container > div{
+  border: 1px solid black;
+  background-color: rgb(105, 148, 99);
+  color: wheat;
+  font-size: 20px;
+}
+.container{
+  display: grid;
+
+  /* --- duas colunas */
+  /* grid-template-columns: auto auto; */
+  /* --- usando o repeat pra todas linha ou não*/
+  grid-template-columns: repeat(2,auto);
+
+  /* --- aumenta tamanho da linha */
+  /* grid-template-rows: 150px 100px; */
+
+  /* --- usando o repeat pra todas linha ou não*/
+  grid-template-rows: repeat(3,150px);
+
+  /* --- FORMA ABREVIADA  */
+  grid-template: repeat(3, 150px) / repeat(2, auto);
+
+  /* --- todos acompanham */
+/*  display: inline-grid;*/   
+
+/* --- separando as colunas e linhas */
+  /* gap: 10px; */
+/* --- separando entre colunas */
+  /* column-gap: 10px; */
+/* --- separando entre linhas */
+/* row-gap: 30px; */
+
+/* --- FORMA ABREVIADA */
+gap: 20px 10px;
+}
