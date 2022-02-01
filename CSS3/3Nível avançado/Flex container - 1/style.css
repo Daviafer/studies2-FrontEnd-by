@@ -1,0 +1,50 @@
+ /*  ----- ----- Direction ----- ----- */
+ /*
+ .container{
+  display: flex;
+  flex-direction: row;
+  // flex-direction: row-reverse;
+  // flex-direction: column; 
+  
+}
+.container div{
+  background-color: brown;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+} 
+*/
+/*  ----- ----- Wrap ----- ----- */
+/* 
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.container div{
+  background-color: brown;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+} 
+*/
+
+/* -----  -----Flow -----  -----*/
+.container{
+  display: flex;
+  flex-direction: row;
+  /* flex-flow:row nowrap; */
+  flex-flow:column;
+
+
+}
+.container div{
+  background-color: lightslategrey;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}

@@ -1,0 +1,23 @@
+/* root = raiz (html) - Escopo Global */
+:root{
+  --cor-padrao: red;
+  --tamanho-de-fonte-padrao: 20px;
+}
+
+/* o segundo elemento é opcional, caso dê problema na variável */
+h2{
+  color: var(--cor-padrao, red);
+  font-size: var(--tamanho-de-fonte-padrao), 20px;
+}
+/* Variável local */
+h3{
+  --cor-padrao: blue;
+  --tamanho-de-fonte-padrao:30px;
+
+  color: var(--cor-padrao);
+  font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+p{
+  color: var(--cor-padrao, red);
+  font-size: var(--tamanho-de-fonte-padrao, 20px);
+}

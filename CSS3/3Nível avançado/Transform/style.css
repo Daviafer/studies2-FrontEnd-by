@@ -1,0 +1,14 @@
+
+img{
+  width: 200px;
+}
+/* Escala X e Y */
+img.scale{
+  transform: scale(1,0.5);
+}
+img.rotate{
+  transform: rotate(45deg);
+}
+img.translate{
+  transform: translate(100px);
+}
