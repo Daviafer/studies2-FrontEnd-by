@@ -1,0 +1,33 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 25px;
+  /* background-color: #5BC241; */
+}
+.logo{
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+}
+.logo img{
+  width: 45px;
+}
+.logo span{
+  
+
+}
+nav{
+  display: flex;
+
+}
+ul, .menu{
+  display: flex;
+}
+ .nav-button{
+  padding: 10px;
+  background-color: #5BC241;
+  border-radius: 10px;
+  border: none;
+}
