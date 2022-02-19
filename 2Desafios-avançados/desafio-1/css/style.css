@@ -2,30 +2,43 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding: 20px;
   flex-wrap: wrap;
-  margin: 25px;
-  /* background-color: #5BC241; */
+  /* max-width: 100%; */
+  /* background-color:cadetblue; */
+
 }
 .logo{
   display: flex;
   align-items: center;
-  text-transform: lowercase;
+  /* background-color: red; */
 }
 .logo img{
-  width: 45px;
+  width: 48px;
 }
 .logo span{
-  
-
+  text-transform: lowercase;
+  font-weight:800;
+  transition: 0.3s;
+}
+.logo span:hover{
+  color: #5BC241;
 }
 nav{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
 
 }
-ul, .menu{
+nav ul{
   display: flex;
 }
- .nav-button{
+nav ul li {
+  margin: 0;
+}
+.cadastre-se{
   padding: 10px;
   background-color: #5BC241;
   border-radius: 10px;
