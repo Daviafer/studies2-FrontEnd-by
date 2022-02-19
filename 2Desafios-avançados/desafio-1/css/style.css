@@ -15,21 +15,20 @@ header{
   /* background-color: red; */
 }
 .logo img{
-  width: 48px;
+  width: 55px;
 }
-.logo span{
+.logo p{
   text-transform: lowercase;
   font-weight:800;
   transition: 0.3s;
 }
-.logo span:hover{
+.logo p:hover{
   color: #5BC241;
 }
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
 
 }
 nav ul{
@@ -37,10 +36,24 @@ nav ul{
 }
 nav ul li {
   margin: 0;
+  padding-left: 30px;
+
 }
-.cadastre-se{
+nav ul li a{
+  font-weight: 300;
   padding: 10px;
+}
+nav ul li a:hover{
+  background-color: #5BC241;
+  color: white;
+}
+button.cadastre-se{
+  padding: 10px;
+  margin-left: 30px;
   background-color: #5BC241;
   border-radius: 10px;
   border: none;
+}
+button a{
+  font-weight: normal;
 }
