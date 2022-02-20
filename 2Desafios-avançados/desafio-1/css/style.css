@@ -9,10 +9,10 @@ header{
   /* background-color:cadetblue; */
 
 }
-.logo{
+/* todo conteúdo do link */
+header a.logo{ 
   display: flex;
   align-items: center;
-  /* background-color: red; */
 }
 .logo img{
   width: 55px;
@@ -54,6 +54,7 @@ button.cadastre-se{
   border-radius: 10px;
   border: none;
 }
-button a{
-  font-weight: normal;
+button.cadastre-se a{
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
