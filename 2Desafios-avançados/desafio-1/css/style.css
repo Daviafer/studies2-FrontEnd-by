@@ -2,17 +2,16 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  flex-wrap: wrap;
-  /* max-width: 100%; */
-  /* background-color:cadetblue; */
+  width: 100%;
+  padding: 30px;
 
 }
-/* todo conteúdo do link */
-header a.logo{ 
+/* todo conteúdo do link logo */
+header .logo{ 
   display: flex;
   align-items: center;
+  justify-content: center;
+
 }
 .logo img{
   width: 55px;
@@ -21,15 +20,14 @@ header a.logo{
   text-transform: lowercase;
   font-weight:800;
   transition: 0.3s;
+  font-size: x-large;
 }
 .logo p:hover{
   color: #5BC241;
 }
 nav{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
 }
 nav ul{
   display: flex;
@@ -47,14 +45,62 @@ nav ul li a:hover{
   background-color: #5BC241;
   color: white;
 }
+
 button.cadastre-se{
+  margin:0px 30px 0px 30px;
   padding: 10px;
-  margin-left: 30px;
   background-color: #5BC241;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
 }
 button.cadastre-se a{
   color: white;
   text-shadow: 1px 1px 5px black;
+  
+}
+button.cadastre-se a:hover{
+  text-shadow: 3px 2px 8px black;
+}
+@media(max-width:860px){
+  header{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .logo{
+    display: flex;
+    justify-content: space-around;
+  }
+  nav{
+    display: flex;
+    padding-top: 20px;
+  }
+}
+@media(max-width:670px){
+  header{
+    padding: 30px;
+    display: block;
+  }
+  nav{
+    display:block;
+    align-items: center;
+  }
+
+  nav ul.menu{
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul.menu li{
+    display: flex;
+    padding: 5px;
+  }
+  nav ul li a{
+    font-size: x-large;
+  }
+  button.cadastre-se{
+    display: flex;
+    margin: 20px auto;
+  }
+  button.cadastre-se a{
+    font-size: 0.7rem;
+  }
 }
