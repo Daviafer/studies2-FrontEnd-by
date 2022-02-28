@@ -28,7 +28,7 @@ console.log(a <= b)
 console.log(a >= b)
 
 
-// - - - - - - - - - &&  - - - - - - - - 
+// - - - - - - - - - - - - - &&  - - - - - - - - - - - - - 
 
 console.log(a === b && a <= b)
 // V e V = verdadeiro
@@ -42,7 +42,7 @@ console.log(a > b && a === b)
 console.log(a < b && a > b)
 // F e F = False
 
-// - - - - - - - - - - - - - OR  - - - - - - - - - - - - 
+// - - - - - - - - - - - - - OR  - - - - - - - - - - - - -
 console.log(a === b || a <= b)
 // V ou V = V
 
