@@ -1,3 +1,5 @@
+/* Higher order functions = função dentro de uma função */
+
 const calcularAnoDeNascimento = function (idade, mesDeNascimento, imprimir) {
   const mesAtual = 2
   let anoDeNascimento = 2022 - idade
