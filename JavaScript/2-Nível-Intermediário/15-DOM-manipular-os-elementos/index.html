@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando DOM</title>
+</head>
+<body>
+  <h1>Posts do Twitter</h1>
+
+  <article class="post">
+    <p> <strong>Fulano de Tal</strong> <span>@Talyes - 10 min</span> </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, ducimus minus quos sint ullam dolores debitis culpa fugiat enim provident error molestias, natus praesentium veritatis. Quaerat rem saepe quod adipisci!
+    </p>
+    <br>
+
+    <div class="comentarios">
+      <h3>Comentários:</h3>
+
+      <input type="text" name="novo-comentario" placeholder="Digite seu comentário">
+      <button onclick="adicionarComentario()">Adicionar comentário</button>
+      <br>
+
+      <div id="novos-comentarios"> </div>
+    </div>
+  </article>
+  
+ <!-- SCRIPT -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
