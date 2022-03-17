@@ -1,5 +1,5 @@
 /* 
-
+  O filter é uma função que aceita outra função com parâmetro que será usada pra filter elementos do array
 */
 
 let pessoas = [
@@ -7,8 +7,6 @@ let pessoas = [
   { nome: 'Fulano dois', idade: 30 },
   { nome: 'Fulano tres', idade: 27 },
 ]
-
-
 // // SEM o FILTER 
 // let pessoasComIdadeDe30Anos = []
 // for (let i = 0; i < pessoas.length; i++) {
@@ -20,7 +18,9 @@ let pessoas = [
 
 //Usando o Filter
 
+//array function
 // let pessoasComIdadeDe30Anos = pessoas.filter((pessoa) => return pessoa.idade === 30)
+
 let pessoasComIdadeDe30Anos = pessoas.filter(function(pessoa){
   return pessoa.idade === 30
 })
