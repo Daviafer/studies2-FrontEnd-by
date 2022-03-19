@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "titulo": "Vingadores",
+  "sinopse": "Aqui fica o texto relacionado a sinopse do filme Vingadores. Esse texto aqui é somente pra ilustração, não tem nada haver com o filme, mas serve de ilustração.",
+  "genero": "Ação",
+  "elenco": ["Ator 1", "Ator 2", "Ator 3"],
+  "direcao": "Joss Whendon"
+}

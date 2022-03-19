@@ -1,0 +1,13 @@
+<filmes>
+  <filme id="1"> 
+    <titulo> Vingadores </titulo>
+    <sinopse> Aqui fica o texto relacionado a sinopse do filme Vingadores. Esse texto aqui é somente pra ilustração, não tem nada haver com o filme, mas serve de ilustração. </sinopse>
+    <genero> Ação </genero>
+    <elenco>
+      <ator> Nome ator 1 </ator>
+      <ator> Nome ator 2 </ator>
+      <ator> Nome ator 3 </ator>
+    </elenco>
+    <direcao> Joss Whendon</direcao>
+  </filme>
+</filmes>
