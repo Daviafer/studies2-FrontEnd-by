@@ -1,0 +1,55 @@
+/* 
+  Algumas considerações:
+  Eu revisei os assuntos mas não consegui chegar ao resultado final esperado. 
+  Acredito que precisarei revisar muito mais sobre Grid.
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  width: 100%; 
+  max-width: 676px;
+}
+main {
+  background-color: #8ba788;
+  display: grid;
+  grid-template-areas: "video-principal propaganda"
+                       "video-principal videos-miniatura";
+  gap: 20px;
+  padding: 30px;
+}
+.video-principal{
+  grid-area: video-principal;
+  display: block;
+  width: 100%;
+}
+.propaganda{
+  grid-area: propaganda;
+}
+.videos-miniaturas{
+  grid-area: videos-miniatura;
+}
+.descricao-video-miniatura {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  padding-bottom: 15px;  
+}
+.texto-principal{
+  font-size: small;
+  padding: 6px 0 6px 0px;
+}
+span{
+  font-size: 10px;
+}
+.texto-miniaturas, h2{
+  font-size: 12px;
+}
+.texto-miniaturas, p, h2{
+  padding: 0px 4px 0px 3px;
+}
