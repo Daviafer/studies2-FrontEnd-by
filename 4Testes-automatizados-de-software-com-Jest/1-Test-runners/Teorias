@@ -1,0 +1,7 @@
+É uma ferramenta que nos ajuda a rodar de forma automatizada os testes que escrevemos.
+
+- Mantêm código mais limpo;
+- Nos dão uma API que facilita a leitura do que o teste precisa;
+- Em equipes fica fácil dos membros do time entenderem os testes de cada componente do sistema;
+- Nos dão um resultado visual de sucesso ou falha de todos os testes;
+- Rodam de forma automatizadaas;

@@ -1,0 +1,16 @@
+Os 3 principais tipos de testes automatizados:
+
+- Testes de ponta a ponta (e2e)
+  - Simulam o ambiente real;
+  - Testam fluxos mais complexos;
+  - Devem ser poucos, pois são custosos de rodar.
+
+- Testes de integração
+  - Testam trechos de código que trabalham em conjunto;
+  - Testam fluxos razoavelmente complexos;
+  - Deveriam ser mais numerosos que os e2e;
+
+- Testes de unidade
+  - Testam uma unidade pequena de código;
+  - Testam fluxos menos complexos;
+  - Vão existir em maior quantidade;

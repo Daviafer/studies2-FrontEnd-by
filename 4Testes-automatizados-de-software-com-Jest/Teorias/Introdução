@@ -1,0 +1,14 @@
+O que é testar de forma automática?
+- Escrever mais código que vai ter como único objetivo testar o código que faz software funcionar.
+- Esses testes vão garantir que cenários de sucesso e de erro no nosso sistema estão cobertos.
+- A cada pequena alteração, muitos testes vão rodar de forma automática.
+
+Num teste manual, é possível resolver o problema, porém é possível que ao resolver o problema, cause outro problema, chama-se de regressão. No teste automatizado, o processo é separado e feito automático.
+
+Objetovos dos testes automatizados:
+- Aumentar a confiança no nosso código;
+- Diminui a quantidade de bugs em produção;
+- Maior garantia de que não vão acontecer regressões;
+- Nos dar mais paz de espírito;
+- Nos ajudam a endender melhor o software e o negócio da Empresa;
+- Nos ajudam a entender mais profundamente a linguagem e conceitos que usamos no dia a dia.
