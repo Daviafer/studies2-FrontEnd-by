@@ -27,7 +27,7 @@ if('Deve cobrar valor de frete quando valor for menor que 500 reais', () => {
   const meuPedido = {
     itens: [
         {nome: 'Sanduiche', valor: 50},
-        {nome: 'Entrega', valor: 100, entrega: tue}
+        {nome: 'Entrega', valor: 100, entrega: true}
     ]
   }
   // act
@@ -41,11 +41,51 @@ it('Deve cobrar o frete quando for igual a 500 reais', () => {
   //Arrange
   const meuPedido = {
     itens: [
-        {nome: 'Sanduiche', valor: 50},
-        {nome: 'Entrega', valor: 100, entrega: tue}
+        {nome: 'Sanduiche', valor: 500},
+        {nome: 'Entrega', valor: 100, entrega: true}
     ]
   }
   const resultado = calcularValorPedido(meuPedido)
+
+  expect(resultado).toBe(600)
+})
+
+// Caso os estados de entrega sejam RS e SC, acrescentar 30% na entrega
+it('Deve adicionar um acrescimo de 20% no valor da entrega do pedido caso o Estado seja RS', () => {
+  const pedidoComEstadoRS = {
+    estado: 'RS',
+    itens: [
+      { nome: 'Sanduíche bem caro', valor: 500},
+      { nome: 'Entrega', valor: 100, entrega: true}
+    ]
+  }
+  const resultado = calcularValorPedido(pedidoComEstadoRS);
+
+  expect(resultado).toBe(620)
+})
+
+it('Deve adicionar um acrescimo de 20% no valor da entrega do pedido, caso o Estado seja SC', () => {
+  const pedidoComEstadoSC = {
+    estado: 'SC',
+    itens: [
+      { nome: 'Sanduíche bem caro', valor: 500},
+      { nome: 'Entrega', valor: 100, entrega: true}
+    ]
+  }
+  const resultado = calcularValorPedido(pedidoComEstadoSC)
+
+  expect(resultado).toBe(620)
+})
+
+it('Não deve adicionar um acrescimo de 20% no valor da entrega do pedido, caso seja pra SP', () => {
+  const pedidoComEstadoSP = {
+    estado: 'SP',
+    itens: [
+      { nome: 'Sanduíche bem caro', valor: 500},
+      { nome: 'Entrega', valor: 100, entrega: true}
+    ]
+  }
+  const resultado = calcularValorPedido(pedidoComEstadoSP)
 
   expect(resultado).toBe(600)
 })
