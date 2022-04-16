@@ -6,10 +6,18 @@ import './button.css'
 // }
 
 // Default usando classe
-class Button extends React.Component{
-  render(){
-    return <button className='btn'> {this.props.label} </button>
-  }
+// class Button extends React.Component{
+//   render(){
+//     return <button className='btn'> {this.props.label} </button>
+//   }
+// }
+
+const sayHello = () =>{
+  console.log('Olá!')
+}
+
+const Button = (props) => {
+  return <button className='btn' onClick={sayHello}> { props.label } </button>
 }
 
 // propriedades padrão - default 
