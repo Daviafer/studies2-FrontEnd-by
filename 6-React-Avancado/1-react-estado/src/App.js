@@ -1,5 +1,5 @@
 import './App.css'
-import Panel from './components/panel/panel'
+import Panel from './components/panel/panel.js'
 
 function App() {
 
