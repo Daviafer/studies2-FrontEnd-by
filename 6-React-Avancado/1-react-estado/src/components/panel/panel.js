@@ -8,7 +8,7 @@ class Panel extends Component{
             title: 'Título do painel'
         }
     }
-    render(){        
+    render(){
         return(
             //alterando comportamento no evento clique  
             <section className="panel" onClick={() =>       
@@ -22,6 +22,23 @@ class Panel extends Component{
             </section>
         )
     }
+
+        // USANDO FUNCTION (nao recomendado)
+    // render() {
+                //atrinuindo uma variável pro this (pra pegar do método)
+    //     const thisComponent = this
+    //     return (
+    //         <section className='panel' onClick={
+    //             function () {
+    //                 thisComponent.setState(
+    //                     {title:'Título novo'}
+    //                 )
+    //             }
+    //         }>
+    //             <h2>{this.state.title}</h2>
+    //         </section>
+    //     )
+    // }
 }
 
 export default Panel
