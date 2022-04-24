@@ -30,7 +30,7 @@ const Form = (props ) => {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="image">Endereço da imagem da carta</label>
-          <input type="text" id="image" name="imagem" onChange={handleInputChange} value={inputs.image}/>
+          <input type="text" id="image" name="image" onChange={handleInputChange} value={inputs.image}/>
         </div>
         <div>
           <label htmlFor="value">Nome da carta</label>
