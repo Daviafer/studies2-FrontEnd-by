@@ -1,0 +1,5 @@
+npx create-react-app theme-toggle-context-api
+
+cd theme-toggle-context-api
+
+npm start
