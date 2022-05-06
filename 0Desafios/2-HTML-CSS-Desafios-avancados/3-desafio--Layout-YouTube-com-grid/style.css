@@ -1,55 +1,55 @@
-/* 
-  Algumas considerações:
-  Eu revisei os assuntos mas não consegui chegar ao resultado final esperado. 
-  Acredito que precisarei revisar muito mais sobre Grid.
-*/
-
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300;
-  width: 100%; 
-  max-width: 676px;
+  font-family: 'Roboto', sans-serif;
 }
-main {
-  background-color: #8ba788;
+.container {
+  background-color: #f7f7f7;
+  max-width: 900px;
   display: grid;
-  grid-template-areas: "video-principal propaganda"
-                       "video-principal videos-miniatura";
+  grid-template-areas: "video-destaque propaganda"
+                       "video-destaque videos-sugeridos";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 56px 1fr;
   gap: 20px;
-  padding: 30px;
+  padding: 35px;
 }
-.video-principal{
-  grid-area: video-principal;
-  display: block;
+.video-destaque{
+  grid-area: video-destaque;
+}
+.video-destaque img{
+  margin-bottom: 12px;
   width: 100%;
+}
+.video-destaque .titulo{
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.video-destaque .visualizacoes{
+  font-size: 14px;
+  margin-bottom: 7px;
 }
 .propaganda{
   grid-area: propaganda;
 }
-.videos-miniaturas{
-  grid-area: videos-miniatura;
+.videos-sugeridos{
+  grid-area: videos-sugeridos;
 }
-.descricao-video-miniatura {
-  display: flex;
-  justify-content: center;
-  /* width: 100%; */
-  padding-bottom: 15px;  
+
+.videos-sugeridos .video {
+display: flex;
+gap: 5px;
+margin-bottom: 15px;
 }
-.texto-principal{
-  font-size: small;
-  padding: 6px 0 6px 0px;
+.videos-sugeridos .video .titulo{
+  font-size: 14px;
+  margin-bottom: 5px;
 }
-span{
-  font-size: 10px;
-}
-.texto-miniaturas, h2{
-  font-size: 12px;
-}
-.texto-miniaturas, p, h2{
-  padding: 0px 4px 0px 3px;
+.videos-sugeridos .video p {
+  font-size: 11px;
+  margin-bottom: 5px;
 }
