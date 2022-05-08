@@ -25,11 +25,15 @@ header {
 
 main {
   display: flex;
+  /* flex-wrap: ; */
   margin: 50px;
 }
 
 .container {
   padding: 50px;
+}
+.container-img img{
+  
 }
 
 .container .title-h1 {
@@ -77,9 +81,9 @@ footer {
 /* ícones redes sociais */
 .redes-sociais{
   display: flex;
+  align-items: center;
   justify-content: end;
-  padding-right: 90px;
-  padding-bottom: 2%;
+  padding-top: 200px;
 }
 .bi{
   padding: 5px;
