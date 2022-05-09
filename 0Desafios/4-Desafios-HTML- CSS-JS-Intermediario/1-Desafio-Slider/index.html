@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio JS Intermediário</title>
-
-  <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <div class="imagens-slider">
+    <a href="#" id="seta-voltar" class="seta-voltar opacidade">
+      <img src="src/imgs/seta.png" alt="Seta voltar">
+    </a>
+  
+    <div class="slide slide-rosa mostrar">
+      <div class="conteudo">
+        <h2 class="titulo">Título 1</h2>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id assumenda sed laboriosam. Aliquid id, excepturi enim quibusdam ratione fugiat earum magnam excepturi enim quibusdam ratione fugiat earum magnam  temporibus iure obcaecati perferendis, vel dicta repellat saepe?</p>
+  
+        <a href="#" class="botao rosa">Saiba mais</a>
+      </div>
+    </div>
+    <div class="slide slide-verde">
+      <div class="conteudo">
+        <h2 class="titulo">Título 2</h2>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id assumenda sed laboriosam. Aliquid id, excepturi enim quibusdam ratione fugiat earum magnam excepturi enim quibusdam ratione fugiat earum magnam  temporibus iure obcaecati perferendis, vel dicta repellat saepe?</p>
+  
+        <a href="#" class="botao verde">Saiba mais</a>
+      </div>
+    </div>
+    <div class="slide slide-laranja">
+      <div class="conteudo">
+        <h2 class="titulo">Título 3</h2>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id assumenda sed laboriosam. Aliquid id, excepturi enim quibusdam ratione fugiat earum magnam excepturi enim quibusdam ratione fugiat earum magnam  temporibus iure obcaecati perferendis, vel dicta repellat saepe?</p>
+  
+        <a href="#" class="botao laranja">Saiba mais</a>
+      </div>
+    </div>
+    <div class="slide slide-azul">
+      <div class="conteudo">
+        <h2 class="titulo">Título 4</h2>
+        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id assumenda sed laboriosam. Aliquid id, excepturi enim quibusdam ratione fugiat earum magnam excepturi enim quibusdam ratione fugiat earum magnam  temporibus iure obcaecati perferendis, vel dicta repellat saepe?</p>
+  
+        <a href="#" class="botao azul">Saiba mais</a>
+      </div>
+    </div>
+
+    <a href="#" id="seta-avancar" class="seta-avancar">
+      <img class="imagem-seta" src="src/imgs/seta.png" alt="Seta avançar" >
+    </a>
+  </div>
+
+<script src="src/js/script-painel.js"></script>
+
+
   <!-- <h1>1-Desafio-Slider</h1> -->
 
   <div id="slider">
@@ -17,9 +70,10 @@
     <img src="imgs/3.jpg" alt="">
     <img src="imgs/4.jpg" alt="">
   </div>
-  
+
 
   <script src="script.js"></script>
-  
+
 </body>
+
 </html>

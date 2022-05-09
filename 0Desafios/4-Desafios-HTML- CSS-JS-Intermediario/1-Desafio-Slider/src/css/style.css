@@ -1,0 +1,64 @@
+/* RESET  */
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+.imagens-slider{
+  display: flex;
+  position: relative; /* para posicionar as setas dentro */
+  align-items: center;
+  height: 100vh; 
+}
+/* escondendo slide */
+.imagens-slider .slide{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0;
+  transition: 0.5s ease-out;
+  font-size: 20px;
+}
+/* mostrando slide 1 */
+.imagens-slider .slide.mostrar{
+  opacity: 1;
+}
+
+/* buscando imagens */
+.slide-rosa{
+  background-image: url(../imgs/rosa.jpg);
+}
+.slide-verde{
+  background-image: url(../imgs/verde.jpg);
+}
+.slide-laranja{
+  background-image: url(../imgs/montanha.jpg);
+}
+.slide-azul{
+  background-image: url(../imgs/lago.jpg);
+}
+
+/* setas voltar e avançar */
+.seta-voltar, .seta-avancar{
+  position: absolute;
+  z-index: 1;
+}
+.seta-voltar{
+  left: 4%;
+  transform: rotate(180deg);
+}
+.seta-avancar{
+  right: 4%;
+}
