@@ -1,0 +1,90 @@
+/* RESET  */
+* {margin:0; padding: 0; font-weight: 300; box-sizing: border-box;}
+
+/* Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+html{
+  background-color: aliceblue;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* toda a página */
+}
+
+.acordeon{
+  width: 655px;
+  min-height: 347px;
+  box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+}
+/* colocando imagem pra cima com o position absolute e movendo pra esquerda - isso por causa do position relative no acordeon */
+.acordeon .ilustracao {
+  position: absolute;
+  left: -90px;
+}
+.acordeon .conteudo{
+  width: 90%;
+  padding-left: 228px;
+}
+.acordeon .conteudo h1{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+/* retirando os pontos da ul  */
+.acordeon .items{
+  list-style-type: none;
+}
+/* itens da lista */
+.acordeon .items .item{
+  cursor: pointer;
+  background-image: url(../imagens/icone-seta-fechada.png);
+  background-repeat: no-repeat;
+  background-position: top 10px right 0;
+  background-size: 12px;
+  border-bottom: 1px solid rgb(184, 38, 38);
+  margin:10px 0;
+}
+/* especificando pra somente a última li não ter border bottom */
+.acordeon .items .item:last-child{
+  border-bottom: none;
+}
+
+/* Pergunta */
+.acordeon .items .item .pergunta{
+  padding-bottom: 15px;
+  transition: 0.2s ease;
+  font-size: 17px;
+  width: 90%; 
+  font-weight: 700;
+}
+.acordeon .items .item .pergunta:hover{
+  color: #f47c57;
+}
+.acordeon .items .item .resposta{
+  display: none;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* Estilos de item de acordeon ativo */
+.acordeon .items .item.ativo h2{
+  font-weight: 700;
+  font-size: 17px;
+}
+.acordeon .items .item.ativo .resposta{
+  display: block;
+}
+.acordeon .items .item.ativo{
+  background-image: url(../imagens/icone-seta-aberta.png);
+}
