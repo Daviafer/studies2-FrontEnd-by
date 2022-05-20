@@ -17,7 +17,7 @@ body {
   background-color: rgb(109, 70, 155);
   color: white;
   margin: 30px 50px 0px 50px;
-  width: 1200px;
+  width: 100vh;
 }
 
 header {
@@ -26,13 +26,14 @@ header {
 
 main {
   display: flex;
+
 }
 
 .container {
-  /* padding: 50px; */
+  width: 100vh;
 }
 .container-img img{
-  width: 100%;
+  max-width: 100%;
 }
 
 .container .title-h1 {
@@ -40,6 +41,7 @@ main {
 }
 
 .container .information {
+  display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 25px;
@@ -81,7 +83,7 @@ footer {
 .redes-sociais{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   padding-top: 200px;
 }
 .bi{
