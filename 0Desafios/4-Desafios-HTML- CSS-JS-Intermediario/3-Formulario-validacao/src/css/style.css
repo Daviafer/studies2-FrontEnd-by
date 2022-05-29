@@ -1,26 +1,26 @@
-/* RESET  */
-* {margin: 0; padding: 0; text-decoration: none; box-sizing: border-box;}
-
 /* Importando fonte Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
+/* RESET  */
+* {margin: 0; padding: 0; text-decoration: none; box-sizing: border-box;}
+
+
 body{
   font-family: 'Roboto', sans-serif;
-  
   /* display: flex;
   justify-content: center; */
 }
 main{
-  display: flex;
-  align-items: center;
-  height: 100vh;
+display: flex;
+justify-content:center;
+margin-top: 30px;
 }
 .container-geral{
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-image: url(../imagem/bg-repeat.jpg);
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
   background-size: contain; 
 
   width: 800px;
@@ -41,7 +41,7 @@ main{
   font-weight: 400;
 }
 
-.form{
+.container-form .form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,3 +55,44 @@ main{
   border: 1px solid black;
   padding: 10px;
 }
+/* JAVASCRIPT */
+.input.vermelho{
+  border: 1px solid #F52E2E;
+}
+.input.verde{
+  border: 1px solid #00C22B;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.empty {
+  border-color: #F52E2E;
+}
+.full {
+  border-color: #3CCC87;
+}
+
+
+button{
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3CCC87;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+span{
+  font-size: 10px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+.container-form p{
+  font-size: 13px;
+  margin: -6px 0px 10px 0px;
+  font-weight: 500;
+}
+
