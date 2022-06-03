@@ -10,27 +10,28 @@
 <body>
   <main>
     <div class="container-geral">
-      <div class="container-message">
+      <section class="container-message">
         <h1> FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
         <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-      </div>
+      </section>
 
       <div class="container-form">
-        <form action="" class="form">
-          <input type="text" class="input" name="nome" id="nome" placeholder="Nome completo *">
-          <span class="menssage-validation">Campo obrigatório.</span>
+        <form action="#" class="form" id="form">
+          <input type="name" class="input" name="name" id="name" placeholder="Nome completo *">
+          <span class="">  Campo obrigatório.</span>
 
-          <input type="text" class="input" name="email" id="email" placeholder="Email *">
-          <span class="menssage-validation">Campo obrigatório.</span>
+          <input type="email" class="input" name="email" id="email" placeholder="Email *">
+          <span class=""> Campo obrigatório.</span>
 
           <input type="tel" class="input" name="phone" id="phone" placeholder="Telefone *">
-          <span class="menssage-validation">Campo obrigatório.</span>
+          <span class=""> Campo obrigatório.</span>
 
-          <textarea class="input" placeholder="Mensagem *" name="message" id="message" cols="30" rows="5"></textarea>
-          <span class="menssage-validation">Campo obrigatório.</span>
+          <textarea placeholder="Mensagem *" name="text" id="text" cols="30" rows="5"></textarea>
+          <span class="" id="text"> Campo obrigatório.</span>
 
           <p>* Campo obrigatório</p>
-          <button type="submit" id="submit">Enviar</button>
+          <button type="submit" value="Enviar" class="input" id="submit">Enviar</button>
+
         </form>
       </div>
     </div>

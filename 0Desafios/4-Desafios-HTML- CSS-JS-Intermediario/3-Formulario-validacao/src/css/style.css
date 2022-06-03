@@ -26,6 +26,7 @@ margin-top: 30px;
   width: 800px;
   height: 402px;
 }
+/* Mensagem lado do formulário  */
 .container-message{
   width: 330px;
   height: 111px;
@@ -41,6 +42,7 @@ margin-top: 30px;
   font-weight: 400;
 }
 
+/* Formulário  */
 .container-form .form{
   display: flex;
   flex-direction: column;
@@ -61,16 +63,6 @@ margin-top: 30px;
 }
 .input.verde{
   border: 1px solid #00C22B;
-}
-
-.hidden {
-  visibility: hidden;
-}
-.empty {
-  border-color: #F52E2E;
-}
-.full {
-  border-color: #3CCC87;
 }
 
 
